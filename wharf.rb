@@ -5,21 +5,21 @@
 class Wharf < Formula
   desc "Terminal UI for managing Docker Compose stacks"
   homepage "https://github.com/idesyatov/wharf"
-  version "0.8.6"
+  version "0.8.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/idesyatov/wharf/releases/download/v0.8.6/wharf-v0.8.6-darwin-amd64.tar.gz"
-      sha256 "27b3529dc3f6613f09ac874926e7a595df105496f5f82dd8d2ee2bb7ee46a55e"
+      url "https://github.com/idesyatov/wharf/releases/download/v0.8.7/wharf-v0.8.7-darwin-amd64.tar.gz"
+      sha256 "ae21bfeaee58f5cc9ec6ef76d1685181eb521419a95ef711317453618f2f8cd5"
 
       define_method(:install) do
         bin.install "wharf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/idesyatov/wharf/releases/download/v0.8.6/wharf-v0.8.6-darwin-arm64.tar.gz"
-      sha256 "361bf9af7281c5374c9e71bc5c98c343d759c859969b6403c46cca3d23dd730b"
+      url "https://github.com/idesyatov/wharf/releases/download/v0.8.7/wharf-v0.8.7-darwin-arm64.tar.gz"
+      sha256 "197a85fd8a29a5071dc682bd68b0e4e99b55bc7e75d91e45b4c7f8db58792b7a"
 
       define_method(:install) do
         bin.install "wharf"
@@ -29,15 +29,15 @@ class Wharf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/idesyatov/wharf/releases/download/v0.8.6/wharf-v0.8.6-linux-amd64.tar.gz"
-      sha256 "1527ba77ee79bf89e8b9fe08b4e42bb79e8282556fdf5d3d985b8daf13f50076"
+      url "https://github.com/idesyatov/wharf/releases/download/v0.8.7/wharf-v0.8.7-linux-amd64.tar.gz"
+      sha256 "e08a5864410a6361de95fe8e86497cd99d0a83cd63968b7e5857f3ad98ba1834"
       define_method(:install) do
         bin.install "wharf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/idesyatov/wharf/releases/download/v0.8.6/wharf-v0.8.6-linux-arm64.tar.gz"
-      sha256 "e3216316f326b7481cf46cb39444e89009329b69fb149fb629b347ea581572a1"
+      url "https://github.com/idesyatov/wharf/releases/download/v0.8.7/wharf-v0.8.7-linux-arm64.tar.gz"
+      sha256 "5b852214b726974228b1af49b77a96a7f0125baaf9e0859fbe8ec3d8cacb3f63"
       define_method(:install) do
         bin.install "wharf"
       end
